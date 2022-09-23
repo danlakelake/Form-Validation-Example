@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Validation Example</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <i id="icons" class="icons fa-sharp fa-solid fa-user"></i> 
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <i class="icons fa-sharp fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="confirm-pass">Confirm Password</label>
+                <i class="icons fa-sharp fa-solid fa-unlock"></i>
+                <input type="password" id="confirm-password" placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Container to display the data -->
+    <div id="info" class="container-info">
+        <h2><i class="fa-sharp fa-solid fa-user"></i> User Info</h2>
+        <hr>
+        <span id="d_username"></span>
+        <br>
+        <span id="d_email"></span>
+        <br>
+        <span id="d_password"></span>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script src="./fontawesome/all.min.js"></script>
+</body>
+</html>
