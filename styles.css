@@ -53,7 +53,9 @@ h2{
 
 .form-control label{
     color: var(--label-color);
-    display:block;
+    display:flex;
+    vertical-align: middle;
+    align-items: center;
     margin-bottom: 5px;
 }
 
@@ -125,5 +127,11 @@ h2{
 
 .container-info hr{
     margin-bottom: 20px;
+}
+
+.fa-eye, .fa-eye-slash{
+    cursor: pointer;
+    font-size:0.85rem;
+    margin-left:0.3rem;
 }
 

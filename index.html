@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <title>Form Validation Example</title>
@@ -20,19 +22,19 @@
             </div>
             <div class="form-control">
                 <label for="email">Email</label>
-                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <i class="icons fa-sharp fa-solid fa-envelope"></i>
                 <input type="text" id="email" placeholder="Enter email">
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
-                <i class="icons fa-sharp fa-solid fa-lock"></i>
+                <label for="password">Password <i onclick="tooglePassword(this, 'password', 'lock-icon')" class="fa fa-eye-slash"></i></label>
+                <i id="lock-icon" class="icons fa-sharp fa-solid fa-lock"></i>
                 <input type="password" id="password" placeholder="Enter password">
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="confirm-pass">Confirm Password</label>
-                <i class="icons fa-sharp fa-solid fa-unlock"></i>
+                <label for="confirm-pass">Confirm Password <i onclick="tooglePassword(this, 'confirm-password', 'lock-icon-conf')" class="fa fa-eye-slash"></i></label>
+                <i id="lock-icon-conf" class="icons fa-sharp fa-solid fa-lock"></i>
                 <input type="password" id="confirm-password" placeholder="Enter password again">
                 <small>Error message</small>
             </div>
